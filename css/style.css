@@ -1,0 +1,68 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background:#fff;
+    font-size: small;
+    overflow: hidden;
+}
+
+.google-interface{
+width:100%;
+margin: 100px 250px auto;
+align-items: center;
+/*margin-left:200px;*/
+}
+#google{
+    padding-top: 109px;
+    margin: 100px  100px 50px 50px auto;
+    width: 272px;
+    height: 132px;
+}
+
+.form{
+    display: block;
+    padding: 18px;
+}
+input[type=text]{
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background: transparent;
+
+}
+
+.buttons{
+    color:#222;
+    border-radius: 4px;
+    margin: 10px auto;
+    margin-left: 60px;
+ 
+}
+
+button{
+    padding: 7px;
+    border:none;
+    margin-left: 10px;
+    background-color: #eee;
+}
+button:hover{
+    font-weight: bold;
+    color:#444;
+    background-color: #fff;
+}
+
+ul li {
+    list-style: none;
+
+
+}
+
+ul li a{
+    text-decoration:none;
+    font-size: 16px;
+   float:left;
+}
