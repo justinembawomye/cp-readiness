@@ -23,7 +23,7 @@ align-items: center;
 
 /* google logo style */
 #google{
-    margin: 100px  100px 50px 50px auto;
+    margin-left:100px;
     width: 300px;
     height: 200px;
 }
@@ -59,7 +59,7 @@ button{
     font-weight: bold;
     padding: 7px;
     border:none;
-    margin-left: 10px;
+    margin-left: 30px;
     color: #555;
     background-color: #eee;
 }
