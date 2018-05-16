@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,18 +8,28 @@
     <title>Google home page</title>
     <link rel="stylesheet" href="css/style.css">
 
-    <script>
-    
-        function validateForm(){
+<script>
+    /*function validateForm(){
+        var box = document.forms["google"]["text"].value;
+        if (box == ""){
+            alert("Field required");
+            return false;
+        } else
+        alert(box);
 
-            var googleForm = document.forms["myForm"]["text"].value; 
+            
+              }*/
+function validateForm(){
 
-            if(googleForm == null || googleForm == ""){
-                alert("This field is required");
-                return false;
-            }
-            }
-    </script>
+       var googleForm = document.forms["myForm"]["text"].value; 
+
+       if(googleForm == null || googleForm == ""){
+           alert("This field is required");
+           return false;
+       }
+}
+      
+</script>
 
 </head>
 <body>
@@ -28,29 +39,36 @@
         <img src="images/google-logo.jpg" id="google" alt="">
     </div>
     <div class="form">
-        <form action="" name="myForm" onsubmit="return validateForm()">
+        <form action="" name="myForm" onsubmit = "return validateForm()">
             <input type="text"placeholder = "Search Google or type URL" maxlength:"2048" name="text">
-        </form>
-    </div>
+          
 
 
     <div class="buttons">
-        <button type= "submit" value="Google search">Google Search</button>
+        <button type="submit" value="goole search">Google search</button>
+       <!-- <button>Google Search</button>-->
         <button>I'm Feeling Lucky</button>
    </div>
+        </form>
+
+    </div>
+<footer>
 
     <div>Google offered in:
-        <a href="#">English</a>
+        
+            <a href="#">Luganda</a>
 
-        <a href="#">Kiswahili</a>
+            <a href="#">Kiswahili</a>
 
-        <a href="#">Ikinyarwanda</a>
+            <a href="#">Ikinyarwanda</a>
 
-        <a href="#">Luo</a>
+            <a href="#">Luo</a>
 
-        <a href="#">Runyakitara</a>
-        </ul>
-    </div>
-</d
+            <a href="#">Runyakitara</a>
+        
+    </div> 
+</div>  
+</footer>  
+</div>
 </body>
 </html>
