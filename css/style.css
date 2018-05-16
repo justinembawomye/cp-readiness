@@ -1,10 +1,16 @@
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     margin: 0;
     padding: 0;
     background:#fff;
     font-size: small;
-    overflow: hidden;
+    color: #222;
+    /*overflow: hidden;*/
 }
 
 .google-interface{
@@ -13,13 +19,17 @@ margin: 100px 250px auto;
 align-items: center;
 /*margin-left:200px;*/
 }
+
+
+/* google logo style */
 #google{
-    padding-top: 109px;
     margin: 100px  100px 50px 50px auto;
-    width: 272px;
-    height: 132px;
+    width: 300px;
+    height: 200px;
 }
 
+
+/* form styles */
 .form{
     display: block;
     padding: 18px;
@@ -35,6 +45,8 @@ input[type=text]{
 
 }
 
+
+/* button styles */
 .buttons{
     color:#222;
     border-radius: 4px;
@@ -44,17 +56,23 @@ input[type=text]{
 }
 
 button{
+    font-weight: bold;
     padding: 7px;
     border:none;
     margin-left: 10px;
+    color: #555;
     background-color: #eee;
 }
 button:hover{
     font-weight: bold;
     color:#444;
+    border: 0.5px solid #ddd;
     background-color: #fff;
 }
 
+/* list styles */
+
+/* 
 ul li {
     list-style: none;
 
@@ -62,7 +80,36 @@ ul li {
 }
 
 ul li a{
+    display: inline;
     text-decoration:none;
     font-size: 16px;
    float:left;
+   margin: 10px;
+}
+*/
+#footer{
+    display: inline-block;
+    line-height: 28px;
+}
+#footer a{
+padding:0 3px;
+
+
+/* link styles */
+}
+a:visited{
+    color: #609;
+}
+a{
+    margin: 10px;
+    color: #1a0dab;
+    text-decoration: none;
+}
+
+a:hover, a:active{
+text-decoration: underline;
+}
+
+body, a, p, .h {
+    font-family: arial,sans-serif;
 }
