@@ -6,6 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Google home page</title>
     <link rel="stylesheet" href="css/style.css">
+
+    <script>
+    
+        function validateForm(){
+
+            var googleForm = document.forms["myForm"]["text"].value; 
+
+            if(googleForm == null || googleForm == ""){
+                alert("This field is required");
+                return false;
+            }
+            }
+    </script>
+
 </head>
 <body>
 
@@ -14,30 +28,29 @@
         <img src="images/google-logo.jpg" id="google" alt="">
     </div>
     <div class="form">
-        <form action="">
-            <input type="text"placeholder = "Search Google or type URL" maxlength:"2048">
+        <form action="" name="myForm" onsubmit="return validateForm()">
+            <input type="text"placeholder = "Search Google or type URL" maxlength:"2048" name="text">
         </form>
     </div>
 
 
     <div class="buttons">
-        <button>Google Search</button>
+        <button type= "submit" value="Google search">Google Search</button>
         <button>I'm Feeling Lucky</button>
    </div>
 
-    <p>Google offered in:
-        <ul>
-            <li><a href="#">Luganda</a></li>
+    <div>Google offered in:
+        <a href="#">English</a>
 
-            <li><a href="#">Kiswahili</a></li>
+        <a href="#">Kiswahili</a>
 
-            <li><a href="#">Ikinyarwanda</a></li>
+        <a href="#">Ikinyarwanda</a>
 
-            <li><a href="#">Luo</a></li>
+        <a href="#">Luo</a>
 
-            <li><a href="#">Runyakitara</a></li>
+        <a href="#">Runyakitara</a>
         </ul>
-    </p>
-</div>
+    </div>
+</d
 </body>
 </html>
