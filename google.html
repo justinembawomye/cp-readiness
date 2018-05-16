@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Google home page</title>
+    <link rel="stylesheet" href="css/style.css">
+
+<script>
+    /*function validateForm(){
+        var box = document.forms["google"]["text"].value;
+        if (box == ""){
+            alert("Field required");
+            return false;
+        } else
+        alert(box);
+
+            
+              }*/
+function validateForm(){
+
+       var googleForm = document.forms["myForm"]["text"].value; 
+
+       if(googleForm == null || googleForm == ""){
+           alert("This field is required");
+           return false;
+       }
+}
+      
+</script>
+
+</head>
+<body>
+
+    <div class="google-interface">
+       <div class="google">
+        <img src="images/google-logo.jpg" id="google" alt="">
+    </div>
+    <div class="form">
+        <form action="" name="myForm" onsubmit = "return validateForm()">
+            <input type="text"placeholder = "Search Google or type URL" maxlength:"2048" name="text">
+          
+
+
+    <div class="buttons">
+        <button type="submit" value="goole search">Google search</button>
+       <!-- <button>Google Search</button>-->
+        <button>I'm Feeling Lucky</button>
+   </div>
+        </form>
+
+    </div>
+<footer>
+
+    <div>Google offered in:
+        
+            <a href="#">Luganda</a>
+
+            <a href="#">Kiswahili</a>
+
+            <a href="#">Ikinyarwanda</a>
+
+            <a href="#">Luo</a>
+
+            <a href="#">Runyakitara</a>
+        
+    </div> 
+</div>  
+</footer>  
+</div>
+</body>
+</html>
